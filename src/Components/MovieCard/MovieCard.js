@@ -7,7 +7,7 @@ export default function MovieCard({el}) {
     return (
         <Link to={`/cards/${el.id}`}>  
         <div className="container">
-            <div className="cellphone-container">    
+            <div className="cellphone-container">
             <div className="movie">
                 <div className="menu"><StarRating totalStars={5} starsSelected={el.rating}/></div>
                 <div className="movie-img" style={{width: '100%', height: '230px', backgroundImage: `url(${el.imgUrl})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', zIndex: '111 !important', borderTopLeftRadius: '4px', borderTopRightRadius: '4px', WebkitMaskImage: '-webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(0.35, black), color-stop(0.5, black), color-stop(0.65, black), color-stop(0.85, rgba(0, 0, 0, 0.6)), color-stop(1, transparent))', position: 'relative'}} />
